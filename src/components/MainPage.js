@@ -28,7 +28,6 @@ const url="https://lively-coveralls.cyclic.app"
     const data_image=await response.json()
     if(data_image.message==="success"){
       setData(data_image.image.data)
-      console.log(data_image.image.data);
     }
     else{
       let error= data_image.error || "something went wrong. Try again"
